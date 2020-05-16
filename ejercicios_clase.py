@@ -21,11 +21,10 @@ def ej1():
     print('Ingrese el primer número decimal a operar:')
     numero_1 = int(input())
 
-    print('Ingrese el segundo número decimal a operar:')
     numero_2 = int(input())
     
     # Alumno: Imprima en pantalla los dos números decimales solicitados
-    # print(....)
+    print(numero_1, numero_2)
 
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_1, numero_2
