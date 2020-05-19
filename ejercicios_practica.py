@@ -31,6 +31,30 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    num_1 = float(input("Ingrese el primer número: "))
+    num_2 = float(input("Ingrese el segundo número: "))
+
+  #Operaciones matemáticas
+
+  #Suma
+    suma_1 = num_1 + num_2
+    print("La suma entre", num_1,"y",num_2,"es",suma_1)
+
+  #Resta
+    resta_1 = num_1 - num_2
+    print("La resta entre", num_1,"y",num_2,"es",resta_1)
+
+  #Multiplicación
+    multi_1 = num_1 * num_2
+    print("La multiplicación entre", num_1,"y",num_2,"es",multi_1)
+
+  #División
+    division_1 = num_1 / num_2
+    print("La división entre", num_1,"y",num_2,"es",division_1)
+
+  #Exponente / Potencia
+    potencia_1 = num_1 ** num_2
+    print("La potencia entre", num_1,"y",num_2,"es",potencia_1)
 
 def ej2():
     # Ejercicios de práctica numérica y cadenas
@@ -50,6 +74,14 @@ def ej2():
       está hablando.
 
     '''
+    nombre_completo = str(input("Ingrese su nombre completo: "))
+    documento = float(input("Ingrese su numero de DNI: "))
+    edad = int(input("Ingrese su edad: "))
+    estatura = float(input("Ingrese su altura: "))
+
+    print("Nombre Completo: ",nombre_completo,"con DNI",documento)
+    print("Nombre Completo: ",nombre_completo,"Edad: ",edad,"y",estatura,"de altura")
+
 def ej3():
     # Ejercicios de práctica con cadenas
 
@@ -79,6 +111,17 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
         
     '''
+    nombre_padre_1 = str(input("Ingrese el nombre del primer padre: "))
+    nombre_padre_2 = str(input("Ingrese el nombre del segundo padre: "))
+    nombre_hijo = str(input("Ingrese el nombre del hijo: "))
+
+    nombre_padre_1.split(" ")
+    nombre_padre_2.split(" ")
+
+    nombre_1,nombre_2 = nombre_padre_1.split(" ")
+    nombre_3,nombre_4 = nombre_padre_2.split(" ")
+
+    print(nombre_hijo + " " + nombre_2 + " " + nombre_4)
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -107,9 +150,17 @@ def ej4():
     https://www.pythonforbeginners.com/dictionary/python-split
 
     Cualquier duda con el método split pueden consultarla por el campus
-    
-        
+            
     '''
+    persona_1 = str(input("Ingrese un nombre y apellido: "))
+    persona_2 = str(input("Ingrese un nombre y apellido: "))
+
+    nombre_1,apellido_1 = persona_1.split(" ")
+    nombre_2,apellido_2 = persona_2.split(" ")
+
+    apellido = apellido_2
+
+    print(apellido in persona_1)
 
 def ej5():
     # Ejercicios de práctica con cadenas
@@ -137,11 +188,16 @@ def ej5():
     
 
     '''
+    nombre_completo = str(input("Ingrese su nombre completo: "))
 
+    print(nombre_completo.lower())
+    print(nombre_completo.upper())
+    print(nombre_completo.capitalize())
+    
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    #ej1()
     #ej2()
     #ej3()
     #ej4()
-    #ej5()
+    ej5()
